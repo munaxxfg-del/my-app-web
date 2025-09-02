@@ -20,6 +20,7 @@
       object-fit: cover;
       display: block;
       margin: 20px auto;     /* মাঝখানে বসবে */
+      box-shadow: 0 0 15px orange; /* সুন্দর শ্যাডো */
     }
     h1 {
       font-size: 28px;
@@ -40,8 +41,13 @@
       border-radius: 8px;
       text-decoration: none;
       margin-top: 20px;
+      transition: 0.3s;
     }
-    .footer {
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px orange;
+    }
+    footer {
       margin-top: 40px;
       font-size: 14px;
       color: #aaa;
@@ -51,7 +57,7 @@
 <body>
 
   <!-- গোল লোগো -->
-  "https://i.ibb.co/FbTHTScS/IMG-20250827-WA0077.jpg">
+  <img src="https://i.ibb.co/FbTHTScS/IMG-20250827-WA0077.jpg" alt="FAST MONEY Logo">
 
   <h1>FAST MONEY App</h1>
   <p>
@@ -59,11 +65,11 @@
     এখনই ডাউনলোড করে ব্যবহার শুরু করুন!
   </p>
 
-  <a href="#" class="button">Download Now</a>
+  <a href="https://drive.google.com/uc?export=download&id=1-3KhjvdKNXSxps0Q5FWCMx54UMyH8bYu" class="button">Download Now</a>
 
-  <div class="footer">
+  <footer>
     © 2025 My Earning App. All rights reserved.
-  </div>
+  </footer>
 
 </body>
 </html>
