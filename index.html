@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Download | ইস্পোর্টস প্লেয়ার</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #2b1055, #7597de);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle at top left, #ff9800, #f44336);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 25px #ff9800;
+      animation: glow 3s infinite alternate;
+    }
+
+    .logo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px #f44336; }
+      100% { box-shadow: 0 0 30px #ff9800; }
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: 20px;
+      font-weight: 700;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .download-btn {
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: linear-gradient(45deg, #ff5722, #ff9800);
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #ff9800, #ff5722);
+    }
+
+    .extra-btns {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .extra-btns button {
+      background: rgba(255,255,255,0.2);
+      border: 1px solid #fff;
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .extra-btns button:hover {
+      background: white;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="https://i.postimg.cc/YqrrM7kH/IMG-20251012-210451-294.jpg" alt="App Logo">
+  </div>
+
+  <h1>আপনি কি একজন 🎮 ইস্পোর্টস প্লেয়ার?</h1>
+
+  <button class="download-btn" onclick="downloadApp()">📲 অ্যাপ ডাউনলোড করুন</button>
+
+  <div class="extra-btns">
+    <button>🎯 টুর্নামেন্ট</button>
+    <button>🏆 লিডারবোর্ড</button>
+    <button>📢 নিউজ</button>
+  </div>
+
+  <script>
+    function downloadApp() {
+      window.location.href = "https://drive.google.com/uc?export=download&id=1wAAQn3FydUxV9tYwnZ4ts8GlrTBsErnN";
+    }
+  </script>
+</body>
+</html>
